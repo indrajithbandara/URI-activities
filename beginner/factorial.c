@@ -1,11 +1,12 @@
 #include<stdio.h>
 
 int main() {
-int n,fat;
+int n,i,fat = 1;
 scanf("%d",&n);
-for(fat = 1; n > 1; n = n -1) {
-fat = fat * n;
-printf("%d",fat);
+for(i= 0,fat = 1;i < n;i++) 
+{
+fat*=n-i;
 }
+printf("\n%d",fat);
 return 0;
 }
